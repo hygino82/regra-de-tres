@@ -2,3 +2,7 @@
 .table-striped>tbody>tr:nth-child(odd)>th {
     background-color: limegreen;
 }
+
+#soma-juros {
+    text-align: center;
+}
