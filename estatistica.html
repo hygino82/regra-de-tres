@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estatistica.css" media="screen" />
+    <title>Gerar tabela</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="/index.html">Regra de Três</a>
+            <a href="/amortizacao.html">Sistema de amortização</a>
+            <a href="/estatistica.html">Estatística</a>
+        </header>
+    </div>
+    <div id="pesquisa" class="container">
+        <label for="titulo">Pesquisa sobre o quê?</label>
+        <input type="text" id="titulo" value="Estatura">
+    </div>
+
+    <div class="container" id="valores">
+        <h3>Adicione os valores</h3>
+        <label for="valor">Valor</label>
+        <input type="number" id="valor" value="141"><br>
+        <label for="repeticao">Repetir valor</label>
+        <input type="number" id="repeticao" min="1" value="13">
+        <button class="btn btn-primary" id="btnAdicionaElemento">Adicionar valores</button>
+        <p id="contagem">Total adicionado</p>
+    </div>
+
+    <div id="intervalos" class="container">
+        <h3>Informe o intervalo</h3>
+        <label for="inicial">Inicial</label>
+        <input type="number" id="inicial" value="140" required><br>
+        <label for="final">Final</label>
+        <input type="number" id="final" value="180" required><br>
+        <label for="tamanho">Tamanho</label>
+        <input type="number" id="tamanho" value="5" min="1" required><br>
+
+        <button class="btn btn-danger" id="btnLimpar">Limpar dados</button>
+        <buton class="btn btn-success" id="btnMostraLista">Mostrar valores</buton>
+    </div>
+
+    <div id="saida" class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col" id="tipoPesquisa">Pesquisa</th>
+                    <th scope="col">F</th>
+                    <th scope="col">Fa</th>
+                    <th scope="col">Fr</th>
+                    <th scope="col">Fp</th>
+                    <th scope="col">Fpa</th>
+                </tr>
+            </thead>
+            <tbody id="corpo-tabela">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/estatistica.js"></script>
+</body>
+
+</html>

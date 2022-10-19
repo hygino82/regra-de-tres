@@ -1,0 +1,27 @@
+#pesquisa {
+    background: rgb(247, 242, 139);
+    border-radius: 4px;
+    width: 310px;
+    padding: 5px;
+}
+
+#valores {
+    background: rgb(213, 186, 239);
+    border-radius: 4px;
+    width: 310px;
+}
+
+#intervalos {
+    background: rgb(202, 239, 164);
+    border-radius: 4px;
+    width: 310px;
+}
+
+#saida {
+    display: none;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: lightslategray;
+}

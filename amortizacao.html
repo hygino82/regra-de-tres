@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de amortização</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/amortizacao.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="/index.html">Regra de Três</a>
+            <a href="/amortizacao.html">Sistema de amortização</a>
+            <a href="/estatistica.html">Estatística</a>
+        </header>
+    </div>
+    <div class="container">
+        <div id="entrada">
+            <p>Informe o valor do empréstimo</p>
+            <input type="number" name="valor" id="valor" value="12000">
+            <p>Informe o número de parcelas</p>
+            <input type="number" name="parcela" id="parcela" value="10">
+            <p>Informe a taxa de juros em %</p>
+            <input type="number" name="taxa" id="taxa" value="3">
+            <p>Qual o sistema de amortização?</p>
+
+            <select id="opcao">
+                <option value="sac" selected>SAC</option>
+                <option value="price">PRICE</option>
+            </select>
+
+            <button id="btnCalcula" class="btn btn-primary">Calcula</button>
+        </div>
+        <div id="resultado">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Parcela</th>
+                        <th scope="col">Juros</th>
+                        <th scope="col">Amortização</th>
+                        <th scope="col">Saldo</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/amortizacao.js"></script>
+</body>
+
+</html>
