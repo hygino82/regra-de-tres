@@ -1,0 +1,15 @@
+#entrada {
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(64, 220, 69, 0.749);
+    width: 350px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#resultado {
+    background-color: rgb(238, 212, 135);
+    width: 350px;
+    border-radius: 5px;
+    padding: 10px;
+}
